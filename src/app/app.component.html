@@ -1,27 +1,30 @@
-<header>
-  <nav>
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/projects" routerLinkActive="active">Projects</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  </nav>
-</header>
+<div class="h-full w-full">
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+  <header>
+    <nav>
+      <a routerLink="/" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </header>
+  
+  <main>
+    <router-outlet></router-outlet>
+  </main>
 
-<footer>
-  <p>&copy; Fjoraldo Gordoni</p>
-  <div>
-    <a href="https://github.com/Aldogordoni" target="_blank">
-      <fa-icon [icon]="faGithub"></fa-icon>
-    </a>
-    <a href="https://www.linkedin.com/in/fjoraldo-gordoni/" target="_blank">
-      <fa-icon [icon]="faLinkedin"></fa-icon>
-    </a>
-    <a href="mailto:aldogordoni@gmail.com">
-      <fa-icon [icon]="faEnvelope"></fa-icon>
-    </a>
-  </div>
-</footer>
+  <footer>
+    <p>&copy; Fjoraldo Gordoni</p>
+    <div>
+      <a href="https://github.com/Aldogordoni" target="_blank">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/fjoraldo-gordoni/" target="_blank">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <a href="mailto:aldogordoni@gmail.com">
+        <fa-icon [icon]="faEnvelope"></fa-icon>
+      </a>
+    </div>
+  </footer>
+</div>
